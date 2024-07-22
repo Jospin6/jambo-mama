@@ -3,7 +3,6 @@ import { MenuTitle } from "./MenuTitle"
 import { MiniFooter } from "./MiniFooter"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { useState } from "react"
 import { useDispatch, useSelector } from 'react-redux'
 import { setIsHidden } from '../features/navbar/navbarSlice'
 
