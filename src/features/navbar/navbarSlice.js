@@ -1,4 +1,3 @@
-import { faLadderWater } from '@fortawesome/free-solid-svg-icons'
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
