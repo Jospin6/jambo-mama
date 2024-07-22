@@ -4,16 +4,20 @@ import { MiniFooter } from "./MiniFooter"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react"
+import { useDispatch, useSelector } from 'react-redux'
+import { setIsHidden } from '../features/navbar/navbarSlice'
 
 export const Menu = () => {
     let style = `w-[300px] bg-white z-10 h-[100vh] 
     fixed top-0 left-0 border-r-[1px] border-gray-300`
-    const [ishidden, setIsHidden] = useState(false)
-    const handleHidden = () => setIsHidden(!ishidden)
-    return <div className={ishidden ?`${style} hidden`: ` ${style} block`}>
+    const { isHidden } = useSelector(state => state.navbar)
+    const dispatch = useDispatch()
+    
+    const handleNavbar = () => dispatch(setIsHidden(!isHidden))
+    return <div className={isHidden ?`${style} hidden`: ` ${style} block`}>
         <div className="relative">
             <MenuTitle/>
-            <button onClick={handleHidden} className="absolute right-[10px] top-[10px] text-red-500">X</button>
+            <button onClick={handleNavbar} className="absolute right-[10px] top-[10px] text-red-500">X</button>
         </div>
         <MenuItem title={'Home'}><FontAwesomeIcon icon={faHome}/></MenuItem>
         <MenuItem title={'Find a Health Facility'}><FontAwesomeIcon icon={faHome}/></MenuItem>

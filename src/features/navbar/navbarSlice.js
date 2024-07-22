@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     loading: false,
-    isHidden: false,
+    isHidden: true,
     navtitle: "JamboMama",
     error: ""
 }
