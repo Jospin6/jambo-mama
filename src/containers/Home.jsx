@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { HomeCardbtn } from '../components/homeCardbtn'
+import { HomeCardbtn } from '../components/HomeCardbtn'
 
 export const Home = () => {
     return <div className="w-full h-[90vh] flex justify-center items-center">
