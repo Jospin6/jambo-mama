@@ -1,8 +1,10 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export const HorizontalCard = ({bg, icon, text}) => {
     return <div className={`text-white rounded-lg flex justify-center items-center min-h-[150px] h-auto ${bg}`}>
         <div className="flex">
-            <span className={`${icon}`}></span>
-            <span className="w-[80px] h-auto"> {text} </span>
+            <FontAwesomeIcon icon={icon} className='text-[30px]'/>
+            <span className="w-[80px] h-auto text-md"> {text} </span>
         </div>
     </div>
 }

@@ -17,7 +17,7 @@ export const MereHome = () => {
          <SubBanner>
             PregnancyAge 36,6 BabyDueDate 12/08/2024
         </SubBanner>
-        <div className="grid w-full grid-cols-4 gap-4 px-[100px]">
+        <div className="grid w-[80%] grid-cols-4 gap-4">
           <PrincipalCardButton text="Follow your Pregnancy" className="col-span-2 bg-blue-500 mt-2">
             <FontAwesomeIcon icon={faFileEdit}/>
           </PrincipalCardButton>

@@ -10,7 +10,7 @@ export const MereHome = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setNavbarTitle("Questionnaire périodique"))
+        dispatch(setNavbarTitle("Signaler un événement"))
     }, [])
     return <div className="w-full h-[90vh] flex justify-center items-center">
          <SubBanner>
