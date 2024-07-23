@@ -10,7 +10,7 @@ export const PragnencePage = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setNavbarTitle("Inscrivez-vous en tant qu'agent"))
+        dispatch(setNavbarTitle("Suivez votre grossesse"))
     }, [])
     return <div className="w-full flex justify-center items-center">
         <SubNavbar text1="Toi-même" text2="Bébé" icon1={faBaby} icon2={faBaby}></SubNavbar>

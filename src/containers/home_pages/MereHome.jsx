@@ -11,13 +11,13 @@ export const MereHome = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setNavbarTitle("Inscrivez-vous en tant qu'agent"))
+        dispatch(setNavbarTitle("JamboMama! pour les mères"))
     }, [])
     return <div className="w-full h-[90vh] flex justify-center items-center">
          <SubBanner>
             PregnancyAge 36,6 BabyDueDate 12/08/2024
         </SubBanner>
-        <div className="grid w-full grid-cols-4 gap-4 h-[400px] px-[100px]">
+        <div className="grid w-full grid-cols-4 gap-4 px-[100px]">
           <PrincipalCardButton text="Follow your Pregnancy" className="col-span-2 bg-blue-500 mt-2">
             <FontAwesomeIcon icon={faFileEdit}/>
           </PrincipalCardButton>
