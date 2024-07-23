@@ -8,11 +8,11 @@ import { InputFile } from '../../components/InputFile'
 import { Input } from '../../components/Input'
 import { SubmitButton } from '../../components/SubmitButton'
 
-export const SigninMere = () => {
+export const SupplierSignin = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setNavbarTitle("Inscrivez-vous en tant que mère"))
+        dispatch(setNavbarTitle("Inscrivez-vous en tant que fournisseur"))
     }, [])
 
 
@@ -47,7 +47,7 @@ export const SigninMere = () => {
                 fieldName="prenom"
                 type="number"
                 placeholder="Votre numero de téléphone" />
-            <SubmitButton text="SUIVANT"/>
+            <SubmitButton text="SOUMETTRE"/>
         </div>
 
 

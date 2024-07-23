@@ -8,7 +8,7 @@ import { InputFile } from '../../components/InputFile'
 import { Input } from '../../components/Input'
 import { SubmitButton } from '../../components/SubmitButton'
 
-export const SigninMere = () => {
+export const SecondSigninForm = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -18,7 +18,13 @@ export const SigninMere = () => {
 
     return <div className='w-full'>
         <SubBanner>
-            <FontAwesomeIcon icon={faUser} /> <span>Personnelle</span>
+            <div className='w-full flex justufy-between'>
+                <div></div>
+                <div>
+                    <FontAwesomeIcon icon={faUser} /> <span> {"Soignant(e)"} </span>
+                </div>
+                <div>Sauter</div>
+            </div>
         </SubBanner>
 
         <div className='w-[400px] m-auto h-auto'>
@@ -47,7 +53,11 @@ export const SigninMere = () => {
                 fieldName="prenom"
                 type="number"
                 placeholder="Votre numero de téléphone" />
-            <SubmitButton text="SUIVANT"/>
+            <div className='flex justify-between'>
+                <SubmitButton text="RETOUR"/>
+                <SubmitButton text="SUIVANT"/>
+            </div>
+            
         </div>
 
 

@@ -1,5 +1,4 @@
-export const InputFile = (props) => {
-    const { labelText, onchange } = props
+export const InputFile = ({ labelText, onchange }) => {
     return <div className="mt-2">
         <label htmlFor="image" className="block mb-[5px] bolder text-[16px]"> {labelText} </label>
         <input

@@ -8,7 +8,7 @@ import { InputFile } from '../../components/InputFile'
 import { Input } from '../../components/Input'
 import { SubmitButton } from '../../components/SubmitButton'
 
-export const SigninMere = () => {
+export const FourthSigninForm = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export const SigninMere = () => {
 
     return <div className='w-full'>
         <SubBanner>
-            <FontAwesomeIcon icon={faUser} /> <span>Personnelle</span>
+            <FontAwesomeIcon icon={faUser} /> <span>Personne de confiance</span>
         </SubBanner>
 
         <div className='w-[400px] m-auto h-auto'>
