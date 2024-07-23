@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 import { SubBanner } from '../../components/SubBanner'
 import { PrincipalCardButton } from '../../components/PrincipalCardButton'
 
-export const Home = () => {
+export const MereHome = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
