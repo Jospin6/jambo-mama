@@ -3,6 +3,7 @@ import { faBars, faMessage } from '@fortawesome/free-solid-svg-icons'
 import { Menu } from './Menu'
 import { useDispatch, useSelector } from 'react-redux'
 import { setIsHidden } from '../features/navbar/navbarSlice'
+import { Link } from 'react-router-dom'
 
 export const Navbar = ({ title }) => {
     const { isHidden } = useSelector(state => state.navbar)
@@ -21,7 +22,9 @@ export const Navbar = ({ title }) => {
         </div>
         <div>
             <span>
-                <FontAwesomeIcon icon={faMessage} className='text-red-500 text-md' />
+                <Link to={"messagerie"}>
+                    <FontAwesomeIcon icon={faMessage} className='text-red-500 text-md' />
+                </Link>
             </span>
         </div>
     </div>

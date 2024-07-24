@@ -8,7 +8,7 @@ import { setIsHidden } from '../features/navbar/navbarSlice'
 import {Link} from 'react-router-dom'
 
 export const Menu = () => {
-    let style = `w-[250px] bg-white z-10 h-[100vh] 
+    let style = `w-[280px] bg-white z-10 h-[100vh] 
     fixed top-0 left-0 border-r-[1px] border-gray-300 overflow-x-auto`
     const { isHidden } = useSelector(state => state.navbar)
     const dispatch = useDispatch()
