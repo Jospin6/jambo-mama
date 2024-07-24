@@ -12,7 +12,7 @@ export const Antecedent = () => {
     useEffect(() => {
         dispatch(setNavbarTitle("Antécédents médicaux"))
     }, [])
-    return <div className="w-full h-[90vh] flex justify-center items-center">
+    return <div className="w-full h-[90vh] items-center">
          <SubBanner>
             {"Age de votre grossesse (semaines, jours) 36,6 Votre bébé est attendu ... (date) 12/08/2024"}
         </SubBanner>
@@ -21,7 +21,7 @@ export const Antecedent = () => {
             21/07/2024
         </div>
 
-        <div className="w-[60%]">
+        <div className="w-[60%] m-auto">
             <QuestionItem question="Salut? Comment ça va aujourd'hui?" otherText="Not Well"/>
             <QuestionItem question="Salut? Comment ça va aujourd'hui?" otherText="Not Well"/>
             <QuestionItem question="Salut? Comment ça va aujourd'hui?" otherText="Not Well"/>

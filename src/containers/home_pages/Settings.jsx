@@ -9,11 +9,11 @@ export const Settings = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setNavbarTitle("Trouver un établissement"))
+        dispatch(setNavbarTitle("Paramettres"))
     }, [])
     return <div className="w-full">
         <div className='w-full flex justify-end text-blue-500 pr-2'><span>Filtre</span></div>
-        <div className='w-[60%]'>
+        <div className='w-[60%] m-auto'>
             <SelectField labelText="Pays">
                 <option value="">Choisir un pays</option>
             </SelectField>

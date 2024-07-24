@@ -19,7 +19,7 @@ export const EncodeTransport = () => {
 
     return <div className='w-full'>
 
-        <div className='w-[400px] m-auto h-auto'>
+        <div className='w-[60%] m-auto h-auto'>
             <SelectField labelText="Type de transport">
                 <option value="">Choisir un type de transport</option>
             </SelectField>

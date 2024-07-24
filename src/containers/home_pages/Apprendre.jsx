@@ -11,8 +11,8 @@ export const Apprendre = () => {
         dispatch(setNavbarTitle("Apprendre"))
     }, [])
     return <div className="w-full">
-        <div className='w-[60%]'>
-            <div>Comment prendre la tension artérielle</div>
+        <div className='w-[60%] m-auto'>
+            <div className='text-2xl py-4'>Comment prendre la tension artérielle</div>
             <div className='w-full h-[400px] bg-red-500 rounded-lg'>
 
             </div>
@@ -21,7 +21,7 @@ export const Apprendre = () => {
                 asperiores, quas harum ea architecto rem nulla? Non facilis dolor quas 
                 voluptate pariatur nisi similique consequuntur. Similique, aperiam.
             </div>
-            <div className='w-full h-[50px] flex items-center bg-green-500 text-white'>
+            <div className='w-full h-[40px] mt-4 px-2 rounded-lg flex items-center bg-green-500 text-white'>
                 <span>
                     <FontAwesomeIcon icon={faArrowLeft} className='mr-6'/>
                 </span>

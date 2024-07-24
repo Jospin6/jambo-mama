@@ -15,12 +15,12 @@ export const MyCode = () => {
     }, [])
 
     return <div className="w-full flex justify-center items-center">
-        <div className="grid w-[60%] grid-cols-6 gap-4 h-auto">
+        <div className="w-[60%] m-auto h-auto pt-2">
             <NeutreCard className="text-red-500 text-center" title="Mon code" >
                 <span>0000199</span>
             </NeutreCard>
             <NeutreCard title="Mon consentement" >
-                <div className='flex'>
+                <div className='flex px-2 pb-2 mt-4'>
                     <div><input type="checkbox" className='mr-2'/></div>
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id asperiores similique voluptatibus 

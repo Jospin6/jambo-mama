@@ -29,6 +29,7 @@ import {PersonDeConfiance} from './containers/home_pages/PersonDeConfiance'
 import {Apprendre} from './containers/home_pages/Apprendre'
 import {Chats} from './containers/home_pages/Chats'
 import {Settings} from './containers/home_pages/Settings'
+import {Chat} from './containers/home_pages/Chat'
 
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
           <Route exact path="/apprendre" element={<Apprendre/>} />
           <Route exact path="/messagerie" element={<Chats/>} />
           <Route exact path="/paramettre" element={<Settings/>} />
+          <Route exact path="/messagerie/chat" element={<Chat/>} />
 
 
       </Routes>
