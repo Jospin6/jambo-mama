@@ -12,8 +12,8 @@ export const MyAccount = () => {
         dispatch(setNavbarTitle("Mon compte"))
     }, [])
 
-    return <div className="w-full flex justify-center items-center">
-        <div className="grid w-[60%] grid-cols-6 gap-4 h-auto">
+    return <div className="w-full flex justify-center">
+        <div className="w-[60%] mt-4 h-auto">
             <Fournisor></Fournisor>
         </div>
     </div>

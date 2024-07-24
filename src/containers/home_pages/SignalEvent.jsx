@@ -6,13 +6,13 @@ import { QuestionItem } from '../../components/QuestionItem'
 import { OtherQuestion } from '../../components/OtherQuestion'
 import { SubmitButton } from '../../components/SubmitButton'
 
-export const MereHome = () => {
+export const SignalEvent = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(setNavbarTitle("Signaler un événement"))
     }, [])
-    return <div className="w-full h-[90vh] flex justify-center items-center">
+    return <div className="w-full pb-6">
          <SubBanner>
             {"Age de votre grossesse (semaines, jours) 36,6 Votre bébé est attendu ... (date) 12/08/2024"}
         </SubBanner>
@@ -21,7 +21,7 @@ export const MereHome = () => {
             21/07/2024
         </div>
 
-        <div className="w-[60%]">
+        <div className="w-[60%] m-auto">
             <QuestionItem question="Salut? Comment ça va aujourd'hui?" otherText="Not Well"/>
             <QuestionItem question="Salut? Comment ça va aujourd'hui?" otherText="Not Well"/>
             <QuestionItem question="Salut? Comment ça va aujourd'hui?" otherText="Not Well"/>

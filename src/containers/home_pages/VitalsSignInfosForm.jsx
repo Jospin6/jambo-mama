@@ -9,7 +9,7 @@ import { SubmitButton } from '../../components/SubmitButton'
 import {PersonaliseInput} from '../../components/PersonaliseInput'
 import { OtherQuestion } from '../../components/OtherQuestion'
 
-export const SupplierSignin = () => {
+export const VitalsSignInfosForm = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -17,7 +17,7 @@ export const SupplierSignin = () => {
     }, [])
 
 
-    return <div className='w-full'>
+    return <div className='w-full pb-6'>
         <SubBanner>
             {"Age de votre grossesse (semaines, jours) 36,6 Votre bébé est attendu ... (date) 12/08/2024"}
         </SubBanner>
@@ -26,7 +26,7 @@ export const SupplierSignin = () => {
             21/07/2024
         </div>
 
-        <div className='w-[400px] m-auto h-auto'>
+        <div className='w-[60%] m-auto h-auto'>
             <InputFile labelText="Sélectionnez ou prenez une photo" />
             <PersonaliseInput 
                 labelText="Tension artérielle-systolique"

@@ -6,9 +6,9 @@ export const QuestionItem = ({question, isHidden, icon, otherText}) => {
         </div>
 
         <div>
-            <button className="px-[10px] py-[2px] rounded-lg bg-green-500 mr-2 text-green-500">Fine</button>
-            <button className="px-[10px] py-[2px] rounded-lg bg-red-500 mr-2 text-red-500">So-so</button>
-            <button className={`px-[10px] py-[2px] rounded-lg bg-blue-500 mr-2 text-blue-500 ${isHidden}`}>{otherText}</button>
+            <button className="px-[10px] py-[2px] rounded-lg bg-green-500 mr-2 text-white text-[14px]">Fine</button>
+            <button className="px-[10px] py-[2px] rounded-lg bg-red-500 mr-2 text-white text-[14px]">So-so</button>
+            <button className={`px-[10px] py-[2px] rounded-lg bg-blue-500 mr-2 text-white text-[14px] ${isHidden}`}>{otherText}</button>
         </div>
 
         <div className="text-[14px] text-blue-500">Histore</div>

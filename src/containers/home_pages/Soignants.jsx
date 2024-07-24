@@ -8,17 +8,17 @@ import { NeutreCard } from '../../components/NeutreCard'
 import { SubmitButton } from '../../components/SubmitButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const MyCode = () => {
+export const Soignants = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setNavbarTitle("Mon code et mon consentement"))
+        dispatch(setNavbarTitle("Soignant(e)s"))
     }, [])
 
-    return <div className="w-full flex justify-center items-center">
-        <div className="grid w-[60%] grid-cols-6 gap-4 h-auto">
+    return <div className="w-full flex justify-center items-center pt-4">
+        <div className="w-[60%] gap-4 h-auto">
             <NeutreCard hidden="hidden" >
-                <div className='text-red-500 mb-4'>
+                <div className='text-red-500 mb-4 pl-2 pt-2'>
                     <FontAwesomeIcon icon={faUser}/> <span>Juliana Moga</span>
                 </div>
                 <div>

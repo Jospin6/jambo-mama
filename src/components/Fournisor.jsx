@@ -1,7 +1,9 @@
 export const Fournisor = ({children}) => {
-    return <div className="border-[1px] border-gray-300 p-2">
+    return <div className="border-[1px] border-gray-300 p-2 rounded-lg">
         <div className="flex justify-center my-4">
-            <span className="w-[50px] h-[50] rounded-full bg-gray-600"></span>
+            <div className="w-[50px] h-[50px] rounded-full bg-gray-600">
+                
+            </div>
         </div>
         <div className="text-[16px] text-red-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, obcaecati est tempora similique 
@@ -9,7 +11,7 @@ export const Fournisor = ({children}) => {
             expedita soluta eum aspernatur nobis consequatur voluptatum asperiores?
         </div>
 
-        <div className="border-[1px] border-gray-300 p-2">
+        <div className="border-[1px] border-gray-300 p-2 mt-2">
             <div className="flex justify-between text-[18px]">
                 <div className="w-[60%] text-gray-400">Nom:</div>
                 <div className="w-[40%] text-black">Jules Nzanzu</div>

@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileEdit } from '@fortawesome/free-solid-svg-icons'
-import { HomeCardbtn } from '../components/HomeCardbtn'
 import { useDispatch } from 'react-redux'
 import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useEffect } from 'react'
 import { SubBanner } from '../../components/SubBanner'
 import { PrincipalCardButton } from '../../components/PrincipalCardButton'
+import { HospitalItem } from '../../components/HospitalItem'
 
 export const FindEtblissement = () => {
     const dispatch = useDispatch()
@@ -13,11 +13,12 @@ export const FindEtblissement = () => {
     useEffect(() => {
         dispatch(setNavbarTitle("Trouver un établissement"))
     }, [])
-    return <div className="w-full h-[90vh] flex justify-center items-center">
-        <div className='w-[300px] text-center'>
-            <div className='pb-4'>Trouver un centre de santé</div>
-            <div> <button className="py-[5px] bg-red-500 mt-4 
-        rounded-md text-white text-[16px]"> D'ACCORD </button> </div>
+    return <div className="w-full">
+        <div className='w-full flex h-[40px] justify-end items-center text-blue-500 pr-6'><span>Filtre</span></div>
+        <div className='w-[60%] m-auto'>
+            <HospitalItem
+                centerName="Centre de santé Diocesain LUMU"
+                location={"Sud-kivu: Bukavu: bagira: Quartier nyakavogo"} />
         </div>
     </div>
 }

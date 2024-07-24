@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { InputFile } from '../../components/InputFile'
 import { Input } from '../../components/Input'
+import { Link } from 'react-router-dom'
 import { SubmitButton } from '../../components/SubmitButton'
 
 export const SigninMere = () => {
@@ -47,7 +48,10 @@ export const SigninMere = () => {
                 fieldName="prenom"
                 type="number"
                 placeholder="Votre numero de téléphone" />
-            <SubmitButton text="SUIVANT"/>
+            <Link to="/mama">
+                <SubmitButton text="SUIVANT"/>
+            </Link>
+            
         </div>
 
 

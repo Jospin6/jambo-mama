@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileEdit } from '@fortawesome/free-solid-svg-icons'
-import { HomeCardbtn } from '../components/HomeCardbtn'
 import { useDispatch } from 'react-redux'
 import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useEffect } from 'react'
 import { SubBanner } from '../../components/SubBanner'
 import { PrincipalCardButton } from '../../components/PrincipalCardButton'
+import { Link } from 'react-router-dom'
 
 export const MereHome = () => {
     const dispatch = useDispatch()
@@ -13,26 +13,35 @@ export const MereHome = () => {
     useEffect(() => {
         dispatch(setNavbarTitle("JamboMama! pour les mères"))
     }, [])
-    return <div className="w-full h-[90vh] flex justify-center items-center">
-         <SubBanner>
+    return <div className="w-full h-[90vh]">
+        <SubBanner>
             PregnancyAge 36,6 BabyDueDate 12/08/2024
         </SubBanner>
-        <div className="grid w-[80%] grid-cols-4 gap-4">
-          <PrincipalCardButton text="Follow your Pregnancy" className="col-span-2 bg-blue-500 mt-2">
-            <FontAwesomeIcon icon={faFileEdit}/>
-          </PrincipalCardButton>
+        <div className="grid w-[80%] m-auto grid-cols-4 gap-4">
+            <Link to={"/mama-grossesse"} className='col-span-2 mt-2'>
+                <PrincipalCardButton text="Follow your Pregnancy" className="bg-blue-500 ">
+                    <FontAwesomeIcon icon={faFileEdit} />
+                </PrincipalCardButton>
+            </Link>
 
-          <PrincipalCardButton text="Periodic Questionnaire" className="col-span-2 bg-purple-500 mt-2">
-            <FontAwesomeIcon icon={faFileEdit}/>
-          </PrincipalCardButton>
+            <Link to={"/periodique-question"} className='col-span-2 mt-2'>
+                <PrincipalCardButton text="Periodic Questionnaire" className="bg-purple-500">
+                    <FontAwesomeIcon icon={faFileEdit} />
+                </PrincipalCardButton>
+            </Link>
 
-          <PrincipalCardButton text="Vital update" className="col-span-2 bg-green-500 mt-2">
-            <FontAwesomeIcon icon={faFileEdit}/>
-          </PrincipalCardButton>
+            <Link to={"/signe-vitaux"} className='col-span-2 mt-2'>
+            <PrincipalCardButton text="Vital update" className="bg-green-500">
+                <FontAwesomeIcon icon={faFileEdit} />
+            </PrincipalCardButton>
+            </Link>
 
-          <PrincipalCardButton text="Something happened" className="col-span-2 bg-red-500 mt-2">
-            <FontAwesomeIcon icon={faFileEdit}/>
-          </PrincipalCardButton>
+            <Link to={"/signe-suspects"} className='col-span-2 mt-2'>
+            <PrincipalCardButton text="Something happened" className="bg-red-500">
+                <FontAwesomeIcon icon={faFileEdit} />
+            </PrincipalCardButton>
+            </Link>
+ 
         </div>
     </div>
 }

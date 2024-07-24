@@ -7,6 +7,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { InputFile } from '../../components/InputFile'
 import { Input } from '../../components/Input'
 import { SubmitButton } from '../../components/SubmitButton'
+import { Link } from 'react-router-dom'
 
 export const AgentSigninForm = () => {
     const dispatch = useDispatch()
@@ -47,7 +48,9 @@ export const AgentSigninForm = () => {
                 fieldName="prenom"
                 type="number"
                 placeholder="Votre numero de téléphone" />
-            <SubmitButton text="SOUMETTRE"/>
+            <Link to="/agent">
+                <SubmitButton text="SOUMETTRE"/>
+            </Link>
         </div>
 
 
