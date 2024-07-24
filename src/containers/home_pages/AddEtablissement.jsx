@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { setNavbarTitle } from '../../features/navbar'
+import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useDispatch } from 'react-redux'
 import { Input } from '../../components/Input'
 import { SubmitButton } from '../../components/SubmitButton'

@@ -1,6 +1,6 @@
 import { faBaby } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from 'react-redux'
-import { setNavbarTitle } from '../../features/navbar'
+import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useEffect } from 'react'
 import { SubBanner } from '../../components/SubBanner'
 import {SubNavbar} from '../../components/SubNavbar'

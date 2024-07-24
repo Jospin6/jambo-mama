@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { setIsHidden } from '../features/navbar/navbarSlice'
+import {Link} from 'react-router-dom'
 
 export const Menu = () => {
     let style = `w-[300px] bg-white z-10 h-[100vh] 
@@ -18,7 +19,8 @@ export const Menu = () => {
             <MenuTitle/>
             <button onClick={handleNavbar} className="absolute right-[10px] top-[10px] text-red-500">X</button>
         </div>
-        <MenuItem title={'Home'}><FontAwesomeIcon icon={faHome}/></MenuItem>
+        <Link to="/"><MenuItem title={'Home'}><FontAwesomeIcon icon={faHome}/></MenuItem></Link>
+        
         <MenuItem title={'Find a Health Facility'}><FontAwesomeIcon icon={faHome}/></MenuItem>
         <MenuItem title={'Find a Transport'}><FontAwesomeIcon icon={faHome}/></MenuItem>
         <MenuItem title={'Register Transport'}><FontAwesomeIcon icon={faHome}/></MenuItem>

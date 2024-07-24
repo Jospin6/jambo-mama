@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { setNavbarTitle } from '../../features/navbar'
+import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faUser } from '@fortawesome/free-solid-svg-icons'

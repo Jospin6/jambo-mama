@@ -10,7 +10,7 @@ export const Navbar = ({ title }) => {
 
     const handleNavbar = () => dispatch(setIsHidden(!isHidden))
 
-    return <div className="bg-[#EFE4B0] text-red-600 w-full h-[50px] flex 
+    return <div className="bg-[#EFE4B0] text-red-600 border-b-[1px] border-gray-300 w-full h-[50px] flex 
         justify-between items-center px-[100px] relative">
         <Menu />
         <div className="text-xl font-500 flex justify-between">

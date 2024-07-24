@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { setNavbarTitle } from '../../features/navbar'
+import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useEffect } from 'react'
 import { HospitalItem } from '../../components/HospitalItem'
 
