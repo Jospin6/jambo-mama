@@ -1,4 +1,4 @@
-export const OtherQuestion = ({question}) => {
+export const OtherQuestion = ({ question }) => {
     return <div className="border-[1px] border-gray-400 rounded-lg p-2">
         <div className="flex justify-between">
             <span> {question} </span>
