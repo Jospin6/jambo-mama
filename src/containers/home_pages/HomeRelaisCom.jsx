@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileEdit } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faUserDoctor } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from 'react-redux'
 import { setNavbarTitle } from '../../features/navbar/navbarSlice'
 import { useEffect } from 'react'
 import { SubBanner } from '../../components/SubBanner'
 import { PrincipalCardButton } from '../../components/PrincipalCardButton'
 import { Link } from 'react-router-dom'
+import JamboMamaNoCaptionWhite from '../../assets/JamboMamaNoCaptionWhite.png'
 
 export const HomeRelaisCom = () => {
     const dispatch = useDispatch()
@@ -16,26 +17,26 @@ export const HomeRelaisCom = () => {
     return <div className="w-full h-[90vh]">
         <div className="grid w-[80%] m-auto grid-cols-4 gap-4">
             <Link to={"/mama-grossesse"} className='col-span-2 mt-2'>
-            <PrincipalCardButton text="Follow your Pregnancy" className="bg-blue-500">
-                <FontAwesomeIcon icon={faFileEdit} />
+            <PrincipalCardButton text="Follow your Pregnancy" className="bg-green-500">
+                <img src={JamboMamaNoCaptionWhite} alt="mama" className='w-[60px] h-[60px]' />
             </PrincipalCardButton>
             </Link>
             
             <Link to={"/femmes-enceinte"} className='col-span-2 mt-2'>
-            <PrincipalCardButton text="Pregnant Women" className="bg-purple-500">
-                <FontAwesomeIcon icon={faFileEdit} />
+            <PrincipalCardButton text="Pregnant Women" className="bg-red-500">
+                <img src={JamboMamaNoCaptionWhite} alt="mama" className='w-[60px] h-[60px]' />
             </PrincipalCardButton>
             </Link>
 
-            <Link to={"femmes-enceinte"} className='col-span-2 mt-2'>
-            <PrincipalCardButton text="Health Providers" className="bg-green-500">
-                <FontAwesomeIcon icon={faFileEdit} />
+            <Link to={"/femmes-enceinte"} className='col-span-2 mt-2'>
+            <PrincipalCardButton text="Health Providers" className="bg-blue-500">
+                <FontAwesomeIcon icon={faUserDoctor} />
             </PrincipalCardButton>
             </Link>
             
-            <Link to={"mon-enceinte"} className='col-span-2 mt-2'>
-            <PrincipalCardButton text="My Account" className="bg-red-500">
-                <FontAwesomeIcon icon={faFileEdit} />
+            <Link to={"/mon-compte"} className='col-span-2 mt-2'>
+            <PrincipalCardButton text="My Account" className="bg-purple-500">
+                <FontAwesomeIcon icon={faUser} />
             </PrincipalCardButton>
             </Link>
 
