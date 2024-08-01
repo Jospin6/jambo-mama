@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { SubBanner } from '../../components/SubBanner'
 import { SubNavbar } from '../../components/SubNavbar'
 import { PragnentCard } from '../../components/PragnentCard'
+import woman4 from '../../assets/woman4.jpg'
 
 export const PragnencePage = () => {
     const dispatch = useDispatch()
@@ -18,7 +19,7 @@ export const PragnencePage = () => {
             <span> {"Votre bébé est attendu le ...(date) 12/08/2024"} </span>
         </SubBanner>
         <div className='w-[60%] m-auto'>
-            <PragnentCard semaine="Semaine 36 à 37" hidden="hidden">
+            <PragnentCard semaine="Semaine 36 à 37" src={woman4}>
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Porro iste dolorem optio natus, enim nam distinctio in provident inventore ea.

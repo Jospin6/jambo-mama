@@ -7,7 +7,6 @@ export const PragnentCard = ({ semaine, src, hidden, children }) => {
         <div className='flex justify-center'>
             <div className="h-[200px] flex justify-center items-center w-[200px] text-red-500 text-[100px] my-4">
                 <img src={src} alt="immage femme" className={`${hidden}`} />
-                <FontAwesomeIcon icon={faUser} />
             </div>
         </div>
         <div className="text-[16px] text-gray-500">
