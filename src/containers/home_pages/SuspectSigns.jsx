@@ -1,4 +1,4 @@
-import { faEdit, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEdit, faUserDoctor, faHospital, faAmbulance } from '@fortawesome/free-solid-svg-icons'
 import { HorizontalCard } from "../../components/HorizontalCard"
 import { useDispatch } from 'react-redux'
 import { setNavbarTitle } from '../../features/navbar/navbarSlice'
@@ -18,13 +18,13 @@ export const SuspectSigns = () => {
                 <HorizontalCard bg="bg-green-500" icon={faEdit} text="Signaler un événement" />
             </Link>
             <Link to={"/mon-soignant"} className='col-span-2'>
-                <HorizontalCard bg="bg-red-500" icon={faEdit} text="Contactez votre soignant(e)" />
+                <HorizontalCard bg="bg-red-500" icon={faUserDoctor} text="Contactez votre soignant(e)" />
             </Link>
             <Link to={"/etablissement"} className='col-span-2'>
-                <HorizontalCard bg="bg-blue-500" icon={faEdit} text="Etablissements de santé" />
+                <HorizontalCard bg="bg-blue-500" icon={faHospital} text="Etablissements de santé" />
             </Link>
             <Link to={"/transport"} className='col-span-2'>
-                <HorizontalCard bg="bg-purple-500" icon={faEdit} text="Ambulance / Transports d'urgence" />
+                <HorizontalCard bg="bg-purple-500" icon={faAmbulance} text="Ambulance / Transports d'urgence" />
             </Link>
         </div>
     </div>
