@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const PersonaliseInput = ({ labelText, id, fieldName, type, placeholder, onchange, value, icon, flag }) => {
+export const PersonaliseInput = ({ labelText, id, fieldName, type, placeholder, onchange, value, src, flag }) => {
     return <div className="mt-2 border-[1px] border-gray-400 rounded-lg p-2">
-        <label htmlFor={id} className="block mb-[5px] bolder text-[16px]"> <FontAwesomeIcon icon={icon} className='text-[20px]'/> <span>{labelText}</span> </label>
+        <label htmlFor={id} className="flex mb-[5px] bolder text-[16px]"> <img src={src} alt="image" className='w-[17px] h-[20px] mr-2' /> <span>{labelText}</span> </label>
         <div className="w-full border-b-[1px] border-gray-400 flex">
             <input
                 id={id}

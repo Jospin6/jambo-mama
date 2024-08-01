@@ -8,6 +8,8 @@ import { InputFile } from '../../components/InputFile'
 import { SubmitButton } from '../../components/SubmitButton'
 import {PersonaliseInput} from '../../components/PersonaliseInput'
 import { OtherQuestion } from '../../components/OtherQuestion'
+import blood from '../../assets/blood.png'
+import diarrhoae from '../../assets/diarrhoea.png'
 
 export const VitalsSignInfosForm = () => {
     const dispatch = useDispatch()
@@ -26,27 +28,27 @@ export const VitalsSignInfosForm = () => {
             21/07/2024
         </div>
 
-        <div className='w-[60%] m-auto h-auto'>
+        <div className='w-[500px] m-auto h-auto'>
             <InputFile labelText="Sélectionnez ou prenez une photo" />
             <PersonaliseInput 
                 labelText="Tension artérielle-systolique"
                 type="text" 
-                icon={faUser}
+                src={blood}
                 flag="mmHg"/>
             <PersonaliseInput 
                 labelText="Albumine dans l'urine"
                 type="text" 
-                icon={faUser}
+                src={diarrhoae}
                 flag="mg/L"/>
             <PersonaliseInput 
                 labelText="Glucose (sucre) dans l'urine"
                 type="text" 
-                icon={faUser}
+                src={diarrhoae}
                 flag="mmHg"/>
             <PersonaliseInput 
                 labelText="Tension artérielle-systolique"
                 type="text" 
-                icon={faUser}
+                src={diarrhoae}
                 flag="mmol/L"/>
             <OtherQuestion question="Rythme cardiaque"/>
             <SubmitButton text="METTRE A JOUR"/>
